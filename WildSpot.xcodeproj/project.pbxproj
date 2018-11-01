@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52022C7921556051006C5229 /* NewPins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52022C7821556051006C5229 /* NewPins.swift */; };
+		521E42A4212C6D9700D44E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E42A3212C6D9700D44E3A /* AppDelegate.swift */; };
+		521E42A6212C6D9700D44E3A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521E42A5212C6D9700D44E3A /* MapViewController.swift */; };
+		521E42A9212C6D9700D44E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521E42A7212C6D9700D44E3A /* Main.storyboard */; };
+		521E42AB212C6D9900D44E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521E42AA212C6D9900D44E3A /* Assets.xcassets */; };
+		521E42AE212C6D9900D44E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521E42AC212C6D9900D44E3A /* LaunchScreen.storyboard */; };
+		52413372216673EC0058A275 /* FirebasePins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52413371216673EC0058A275 /* FirebasePins.swift */; };
+		5270C6AE217A1A680018CE0A /* App Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270C6AD217A1A680018CE0A /* App Launch.swift */; };
+		5270C6B0217A334D0018CE0A /* Adding a Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5270C6AF217A334D0018CE0A /* Adding a Pin.swift */; };
+		52747F9C214C3AB6004AC30F /* MapViewDelegate and Supporting Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52747F9B214C3AB6004AC30F /* MapViewDelegate and Supporting Methods.swift */; };
+		52747F9E214C3BD1004AC30F /* Adding Pins and Picking Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52747F9D214C3BD1004AC30F /* Adding Pins and Picking Images.swift */; };
+		52747FA1214C3CDC004AC30F /* Location Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52747FA0214C3CDC004AC30F /* Location Services.swift */; };
+		52747FA3214C3D63004AC30F /* Downloading Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52747FA2214C3D63004AC30F /* Downloading Photos.swift */; };
+		5296923B217A644200F58BF1 /* Deleting a Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5296923A217A644200F58BF1 /* Deleting a Pin.swift */; };
+		52A28690212C7545002FEEC5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A2868F212C7545002FEEC5 /* LoginViewController.swift */; };
+		52A28692212C759B002FEEC5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A28691212C759B002FEEC5 /* DetailViewController.swift */; };
+		52AF2C9621515EE100C07626 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AF2C9521515EE100C07626 /* ImagePicker.swift */; };
+		52C7D310215EBD7400511166 /* WildSpot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52C7D30E215EBD7400511166 /* WildSpot.xcdatamodeld */; };
+		52C7D312215EC49B00511166 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7D311215EC49B00511166 /* DataController.swift */; };
+		52C7D314215ED22D00511166 /* NewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7D313215ED22D00511166 /* NewPin.swift */; };
+		52DD849C212C767B006EDD96 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD849B212C767B006EDD96 /* Authentication.swift */; };
+		52DD849E212C7693006EDD96 /* RetrieveAndStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD849D212C7693006EDD96 /* RetrieveAndStore.swift */; };
+		52DD84A0212C76A8006EDD96 /* FlickrClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD849F212C76A8006EDD96 /* FlickrClient.swift */; };
+		A80C55612180D45800EB1EDB /* RetrieveImagesForDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80C55602180D45800EB1EDB /* RetrieveImagesForDetailViewController.swift */; };
+		A80C55632181409300EB1EDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A80C55622181409300EB1EDB /* GoogleService-Info.plist */; };
+		A83541032163BD1F00CDC87B /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83541022163BD1F00CDC87B /* UserName.swift */; };
+		A8E935D62177C2B300DCF677 /* Download Image From URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E935D52177C2B300DCF677 /* Download Image From URL.swift */; };
+		A8E935D82177C33600DCF677 /* Interacting with CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E935D72177C33600DCF677 /* Interacting with CoreData.swift */; };
+		A8E935DA2177C4A700DCF677 /* Interacting with Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E935D92177C4A700DCF677 /* Interacting with Firebase.swift */; };
+		A8F7ADCD21670C09003B28CC /* Annotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F7ADCC21670C09003B28CC /* Annotations.swift */; };
+		B5B783D3F992E5268FCF4C2A /* Pods_WildSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652844FB145F61413160421B /* Pods_WildSpot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		521E42B5212C6D9900D44E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 521E4298212C6D9700D44E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521E429F212C6D9700D44E3A;
+			remoteInfo = WildSpot;
+		};
+		521E42C0212C6D9900D44E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 521E4298212C6D9700D44E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 521E429F212C6D9700D44E3A;
+			remoteInfo = WildSpot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		208F8E411AE1A96203B6B4FC /* Pods-WildSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WildSpot.release.xcconfig"; path = "Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot.release.xcconfig"; sourceTree = "<group>"; };
+		52022C7821556051006C5229 /* NewPins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPins.swift; sourceTree = "<group>"; };
+		521E42A0212C6D9700D44E3A /* WildSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521E42A3212C6D9700D44E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		521E42A5212C6D9700D44E3A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		521E42A8212C6D9700D44E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		521E42AA212C6D9900D44E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		521E42AD212C6D9900D44E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		521E42AF212C6D9900D44E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		521E42B4212C6D9900D44E3A /* WildSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		521E42BF212C6D9900D44E3A /* WildSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52413371216673EC0058A275 /* FirebasePins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebasePins.swift; sourceTree = "<group>"; };
+		5270C6AD217A1A680018CE0A /* App Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Launch.swift"; sourceTree = "<group>"; };
+		5270C6AF217A334D0018CE0A /* Adding a Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adding a Pin.swift"; sourceTree = "<group>"; };
+		52747F9B214C3AB6004AC30F /* MapViewDelegate and Supporting Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapViewDelegate and Supporting Methods.swift"; sourceTree = "<group>"; };
+		52747F9D214C3BD1004AC30F /* Adding Pins and Picking Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adding Pins and Picking Images.swift"; sourceTree = "<group>"; };
+		52747FA0214C3CDC004AC30F /* Location Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Services.swift"; sourceTree = "<group>"; };
+		52747FA2214C3D63004AC30F /* Downloading Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Downloading Photos.swift"; sourceTree = "<group>"; };
+		5296923A217A644200F58BF1 /* Deleting a Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deleting a Pin.swift"; sourceTree = "<group>"; };
+		52A2868F212C7545002FEEC5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		52A28691212C759B002FEEC5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		52AF2C9521515EE100C07626 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		52C7D30F215EBD7400511166 /* Data Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data Model.xcdatamodel"; sourceTree = "<group>"; };
+		52C7D311215EC49B00511166 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		52C7D313215ED22D00511166 /* NewPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPin.swift; sourceTree = "<group>"; };
+		52DD849B212C767B006EDD96 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		52DD849D212C7693006EDD96 /* RetrieveAndStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveAndStore.swift; sourceTree = "<group>"; };
+		52DD849F212C76A8006EDD96 /* FlickrClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrClient.swift; sourceTree = "<group>"; };
+		652844FB145F61413160421B /* Pods_WildSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WildSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A10F8F9EEC96B4A097ABC1 /* Pods-WildSpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WildSpot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot.debug.xcconfig"; sourceTree = "<group>"; };
+		A80C55602180D45800EB1EDB /* RetrieveImagesForDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveImagesForDetailViewController.swift; sourceTree = "<group>"; };
+		A80C55622181409300EB1EDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A83541022163BD1F00CDC87B /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
+		A8E935D52177C2B300DCF677 /* Download Image From URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Download Image From URL.swift"; sourceTree = "<group>"; };
+		A8E935D72177C33600DCF677 /* Interacting with CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interacting with CoreData.swift"; sourceTree = "<group>"; };
+		A8E935D92177C4A700DCF677 /* Interacting with Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interacting with Firebase.swift"; sourceTree = "<group>"; };
+		A8F7ADCC21670C09003B28CC /* Annotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521E429D212C6D9700D44E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B783D3F992E5268FCF4C2A /* Pods_WildSpot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42B1212C6D9900D44E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42BC212C6D9900D44E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		521E4297212C6D9700D44E3A = {
+			isa = PBXGroup;
+			children = (
+				521E42A2212C6D9700D44E3A /* WildSpot */,
+				521E42A1212C6D9700D44E3A /* Products */,
+				AD17D6829D2E05A5BF3F4995 /* Pods */,
+				5C9FBA4683325983E1AEE853 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		521E42A1212C6D9700D44E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521E42A0212C6D9700D44E3A /* WildSpot.app */,
+				521E42B4212C6D9900D44E3A /* WildSpotTests.xctest */,
+				521E42BF212C6D9900D44E3A /* WildSpotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521E42A2212C6D9700D44E3A /* WildSpot */ = {
+			isa = PBXGroup;
+			children = (
+				52022C7821556051006C5229 /* NewPins.swift */,
+				A80C55622181409300EB1EDB /* GoogleService-Info.plist */,
+				52B4035221557E1700C2C10F /* Supporing Files */,
+				521E42A3212C6D9700D44E3A /* AppDelegate.swift */,
+				52A28693212C7612002FEEC5 /* Networking */,
+				52A2868E212C748C002FEEC5 /* ViewControllers */,
+				521E42A7212C6D9700D44E3A /* Main.storyboard */,
+				521E42AA212C6D9900D44E3A /* Assets.xcassets */,
+				521E42AC212C6D9900D44E3A /* LaunchScreen.storyboard */,
+				521E42AF212C6D9900D44E3A /* Info.plist */,
+				52C7D311215EC49B00511166 /* DataController.swift */,
+			);
+			path = WildSpot;
+			sourceTree = "<group>";
+		};
+		52747F9F214C3C74004AC30F /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52AF2C9521515EE100C07626 /* ImagePicker.swift */,
+				521E42A5212C6D9700D44E3A /* MapViewController.swift */,
+				52747FA2214C3D63004AC30F /* Downloading Photos.swift */,
+				52747FA0214C3CDC004AC30F /* Location Services.swift */,
+				52747F9D214C3BD1004AC30F /* Adding Pins and Picking Images.swift */,
+				52747F9B214C3AB6004AC30F /* MapViewDelegate and Supporting Methods.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		52A2868E212C748C002FEEC5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				52747F9F214C3C74004AC30F /* MapViewController */,
+				52A2868F212C7545002FEEC5 /* LoginViewController.swift */,
+				52A28691212C759B002FEEC5 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52A28693212C7612002FEEC5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A8E935D42177C28E00DCF677 /* Retrieve and Store */,
+				52DD849B212C767B006EDD96 /* Authentication.swift */,
+				52DD849F212C76A8006EDD96 /* FlickrClient.swift */,
+				A80C55602180D45800EB1EDB /* RetrieveImagesForDetailViewController.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		52B4035221557E1700C2C10F /* Supporing Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8F7ADCC21670C09003B28CC /* Annotations.swift */,
+				A83541022163BD1F00CDC87B /* UserName.swift */,
+				52C7D30E215EBD7400511166 /* WildSpot.xcdatamodeld */,
+				52C7D313215ED22D00511166 /* NewPin.swift */,
+				52413371216673EC0058A275 /* FirebasePins.swift */,
+			);
+			path = "Supporing Files";
+			sourceTree = "<group>";
+		};
+		5C9FBA4683325983E1AEE853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				652844FB145F61413160421B /* Pods_WildSpot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8E935D42177C28E00DCF677 /* Retrieve and Store */ = {
+			isa = PBXGroup;
+			children = (
+				52DD849D212C7693006EDD96 /* RetrieveAndStore.swift */,
+				5270C6AD217A1A680018CE0A /* App Launch.swift */,
+				A8E935D72177C33600DCF677 /* Interacting with CoreData.swift */,
+				A8E935D52177C2B300DCF677 /* Download Image From URL.swift */,
+				A8E935D92177C4A700DCF677 /* Interacting with Firebase.swift */,
+				5270C6AF217A334D0018CE0A /* Adding a Pin.swift */,
+				5296923A217A644200F58BF1 /* Deleting a Pin.swift */,
+			);
+			path = "Retrieve and Store";
+			sourceTree = "<group>";
+		};
+		AD17D6829D2E05A5BF3F4995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80A10F8F9EEC96B4A097ABC1 /* Pods-WildSpot.debug.xcconfig */,
+				208F8E411AE1A96203B6B4FC /* Pods-WildSpot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521E429F212C6D9700D44E3A /* WildSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521E42C8212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpot" */;
+			buildPhases = (
+				71F9023C34F03F28C2FFC743 /* [CP] Check Pods Manifest.lock */,
+				521E429C212C6D9700D44E3A /* Sources */,
+				521E429D212C6D9700D44E3A /* Frameworks */,
+				521E429E212C6D9700D44E3A /* Resources */,
+				8495B18AFE2F3527F9D7E262 /* [CP] Embed Pods Frameworks */,
+				FC962385CA1780E63888CC44 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WildSpot;
+			productName = WildSpot;
+			productReference = 521E42A0212C6D9700D44E3A /* WildSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		521E42B3212C6D9900D44E3A /* WildSpotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521E42CB212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpotTests" */;
+			buildPhases = (
+				521E42B0212C6D9900D44E3A /* Sources */,
+				521E42B1212C6D9900D44E3A /* Frameworks */,
+				521E42B2212C6D9900D44E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				521E42B6212C6D9900D44E3A /* PBXTargetDependency */,
+			);
+			name = WildSpotTests;
+			productName = WildSpotTests;
+			productReference = 521E42B4212C6D9900D44E3A /* WildSpotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		521E42BE212C6D9900D44E3A /* WildSpotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521E42CE212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpotUITests" */;
+			buildPhases = (
+				521E42BB212C6D9900D44E3A /* Sources */,
+				521E42BC212C6D9900D44E3A /* Frameworks */,
+				521E42BD212C6D9900D44E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				521E42C1212C6D9900D44E3A /* PBXTargetDependency */,
+			);
+			name = WildSpotUITests;
+			productName = WildSpotUITests;
+			productReference = 521E42BF212C6D9900D44E3A /* WildSpotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521E4298212C6D9700D44E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "John Fandrey";
+				TargetAttributes = {
+					521E429F212C6D9700D44E3A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					521E42B3212C6D9900D44E3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 521E429F212C6D9700D44E3A;
+					};
+					521E42BE212C6D9900D44E3A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 521E429F212C6D9700D44E3A;
+					};
+				};
+			};
+			buildConfigurationList = 521E429B212C6D9700D44E3A /* Build configuration list for PBXProject "WildSpot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 521E4297212C6D9700D44E3A;
+			productRefGroup = 521E42A1212C6D9700D44E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521E429F212C6D9700D44E3A /* WildSpot */,
+				521E42B3212C6D9900D44E3A /* WildSpotTests */,
+				521E42BE212C6D9900D44E3A /* WildSpotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521E429E212C6D9700D44E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521E42AE212C6D9900D44E3A /* LaunchScreen.storyboard in Resources */,
+				A80C55632181409300EB1EDB /* GoogleService-Info.plist in Resources */,
+				521E42AB212C6D9900D44E3A /* Assets.xcassets in Resources */,
+				521E42A9212C6D9700D44E3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42B2212C6D9900D44E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42BD212C6D9900D44E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71F9023C34F03F28C2FFC743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WildSpot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8495B18AFE2F3527F9D7E262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Auth/Auth.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC962385CA1780E63888CC44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WildSpot/Pods-WildSpot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521E429C212C6D9700D44E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52C7D314215ED22D00511166 /* NewPin.swift in Sources */,
+				52C7D310215EBD7400511166 /* WildSpot.xcdatamodeld in Sources */,
+				5296923B217A644200F58BF1 /* Deleting a Pin.swift in Sources */,
+				A80C55612180D45800EB1EDB /* RetrieveImagesForDetailViewController.swift in Sources */,
+				A8F7ADCD21670C09003B28CC /* Annotations.swift in Sources */,
+				A8E935D82177C33600DCF677 /* Interacting with CoreData.swift in Sources */,
+				52A28690212C7545002FEEC5 /* LoginViewController.swift in Sources */,
+				52DD849E212C7693006EDD96 /* RetrieveAndStore.swift in Sources */,
+				52DD84A0212C76A8006EDD96 /* FlickrClient.swift in Sources */,
+				52022C7921556051006C5229 /* NewPins.swift in Sources */,
+				52747FA1214C3CDC004AC30F /* Location Services.swift in Sources */,
+				52AF2C9621515EE100C07626 /* ImagePicker.swift in Sources */,
+				52413372216673EC0058A275 /* FirebasePins.swift in Sources */,
+				521E42A6212C6D9700D44E3A /* MapViewController.swift in Sources */,
+				5270C6B0217A334D0018CE0A /* Adding a Pin.swift in Sources */,
+				521E42A4212C6D9700D44E3A /* AppDelegate.swift in Sources */,
+				52747F9C214C3AB6004AC30F /* MapViewDelegate and Supporting Methods.swift in Sources */,
+				52DD849C212C767B006EDD96 /* Authentication.swift in Sources */,
+				A8E935D62177C2B300DCF677 /* Download Image From URL.swift in Sources */,
+				A83541032163BD1F00CDC87B /* UserName.swift in Sources */,
+				52747FA3214C3D63004AC30F /* Downloading Photos.swift in Sources */,
+				52C7D312215EC49B00511166 /* DataController.swift in Sources */,
+				52747F9E214C3BD1004AC30F /* Adding Pins and Picking Images.swift in Sources */,
+				52A28692212C759B002FEEC5 /* DetailViewController.swift in Sources */,
+				5270C6AE217A1A680018CE0A /* App Launch.swift in Sources */,
+				A8E935DA2177C4A700DCF677 /* Interacting with Firebase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42B0212C6D9900D44E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		521E42BB212C6D9900D44E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		521E42B6212C6D9900D44E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521E429F212C6D9700D44E3A /* WildSpot */;
+			targetProxy = 521E42B5212C6D9900D44E3A /* PBXContainerItemProxy */;
+		};
+		521E42C1212C6D9900D44E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 521E429F212C6D9700D44E3A /* WildSpot */;
+			targetProxy = 521E42C0212C6D9900D44E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		521E42A7212C6D9700D44E3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521E42A8212C6D9700D44E3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		521E42AC212C6D9900D44E3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521E42AD212C6D9900D44E3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		521E42C6212C6D9900D44E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		521E42C7212C6D9900D44E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		521E42C9212C6D9900D44E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A10F8F9EEC96B4A097ABC1 /* Pods-WildSpot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.udacity.WildSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		521E42CA212C6D9900D44E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208F8E411AE1A96203B6B4FC /* Pods-WildSpot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.firebase.udacity.WildSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		521E42CC212C6D9900D44E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Fandrey.WildSpotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildSpot.app/WildSpot";
+			};
+			name = Debug;
+		};
+		521E42CD212C6D9900D44E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Fandrey.WildSpotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildSpot.app/WildSpot";
+			};
+			name = Release;
+		};
+		521E42CF212C6D9900D44E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Fandrey.WildSpotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WildSpot;
+			};
+			name = Debug;
+		};
+		521E42D0212C6D9900D44E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WildSpotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Fandrey.WildSpotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WildSpot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521E429B212C6D9700D44E3A /* Build configuration list for PBXProject "WildSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521E42C6212C6D9900D44E3A /* Debug */,
+				521E42C7212C6D9900D44E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521E42C8212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521E42C9212C6D9900D44E3A /* Debug */,
+				521E42CA212C6D9900D44E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521E42CB212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521E42CC212C6D9900D44E3A /* Debug */,
+				521E42CD212C6D9900D44E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521E42CE212C6D9900D44E3A /* Build configuration list for PBXNativeTarget "WildSpotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521E42CF212C6D9900D44E3A /* Debug */,
+				521E42D0212C6D9900D44E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52C7D30E215EBD7400511166 /* WildSpot.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52C7D30F215EBD7400511166 /* Data Model.xcdatamodel */,
+			);
+			currentVersion = 52C7D30F215EBD7400511166 /* Data Model.xcdatamodel */;
+			path = WildSpot.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 521E4298212C6D9700D44E3A /* Project object */;
+}
